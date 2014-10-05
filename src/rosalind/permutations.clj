@@ -30,12 +30,11 @@
            acc []]
       (if (or (< cur maxPos) (< cur 0))
         (if (= maxPos -1 ) [nil nil] (acc maxIndex))
-        (let [pos (findFirstLessThan v cur)]
-          (if (nil? pos)
-            (recur (dec cur) maxPos maxIndex acc)
-            (let [newAcc (conj acc [cur pos])
-                  newMaxPos (max pos maxPos)]
-              (recur (dec cur) newMaxPos (if (not= maxPos newMaxPos) (dec (count newAcc)) maxIndex) newAcc))))))))
+        (if-let [pos (findFirstLessThan v cur)]
+          (let [newAcc (conj acc [cur pos])
+                newMaxPos (max pos maxPos)]
+            (recur (dec cur) newMaxPos (if (not= maxPos newMaxPos) (dec (count newAcc)) maxIndex) newAcc))
+            (recur (dec cur) maxPos maxIndex acc))))))
 
 (defn sort-remainder [v pos1]
   (if (= (dec (count v)) pos1)
