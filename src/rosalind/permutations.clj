@@ -14,9 +14,7 @@
 (defn findFirstLessThan [v pos]
   (let [cur pos]
     (loop [cur cur]
-      (if (< cur 0)
-        nil
-        (if (< (v cur) (v pos)) cur (recur (dec cur)))))))
+      (if (< cur 0) nil (if (< (v cur) (v pos)) cur (recur (dec cur)))))))
 
 (def not-nil? (complement nil?))
 
@@ -29,7 +27,7 @@
            maxIndex 0
            acc []]
       (if (or (< cur maxPos) (< cur 0))
-        (if (= maxPos -1 ) [nil nil] (acc maxIndex))
+        (if (= maxPos -1 ) nil (acc maxIndex))
         (if-let [pos (findFirstLessThan v cur)]
           (let [newAcc (conj acc [cur pos])
                 newMaxPos (max pos maxPos)]
@@ -40,7 +38,6 @@
   (if (= (dec (count v)) pos1) v (into (subvec v 0 pos1) (sort (subvec v pos1)))))
 
 (defn permute [v]
-  (let [[pos2 pos1] (findStartingPos v)]
-    (when (not-nil? pos2)
-      (let [nxt (sort-remainder (swapDigits v pos2 pos1) (inc pos1))]
-        (cons nxt (lazy-seq (permute nxt)))))))
+  (when-let [[pos2 pos1] (findStartingPos v)]
+    (let [nxt (sort-remainder (swapDigits v pos2 pos1) (inc pos1))]
+      (cons nxt (lazy-seq (permute nxt))))))
