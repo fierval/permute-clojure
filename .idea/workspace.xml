@@ -4,7 +4,24 @@
     <bookmark url="file://$PROJECT_DIR$/src/rosalind/permutations.clj" line="34" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad71e2bf-b056-4a8d-880f-ef3a6119d574" name="Default" comment="" />
+    <list default="true" id="ad71e2bf-b056-4a8d-880f-ef3a6119d574" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\inspectionProfiles\Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\inspectionProfiles\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\libraries\Leiningen__clojure_complete_0_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\libraries\Leiningen__org_clojure_clojure_1_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\libraries\Leiningen__org_clojure_tools_nrepl_0_2_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\replstate.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\runConfigurations\permute.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\boris\Dropbox\Clojure\projects\rosalind\.idea\workspace.xml" afterPath="" />
+    </list>
     <ignored path="rosalind.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.16088328" vertical-offset="0" max-vertical-offset="951">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -66,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core_test.clj" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="core_test.clj" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/rosalind/core_test.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12513144" vertical-offset="0" max-vertical-offset="951">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -103,6 +120,7 @@
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/src/rosalind/core.clj" />
         <option value="$PROJECT_DIR$/src/rosalind/permutations.clj" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -458,11 +476,16 @@
       <created>1410407377856</created>
       <updated>1410407377856</updated>
     </task>
+    <task id="LOCAL-00001" summary="ignore ide">
+      <created>1412486005524</created>
+      <updated>1412486005524</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="-4" width="1936" height="1087" extended-state="1" />
-    <editor active="true" />
+    <frame x="1" y="-4" width="1936" height="1087" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -481,7 +504,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2078125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864583" sideWeight="0.50076103" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1276813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -510,6 +533,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="ignore ide" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore ide" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -887,14 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rosalind/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -921,8 +938,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/rosalind/core_test.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12513144" vertical-offset="0" max-vertical-offset="951">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16088328" vertical-offset="0" max-vertical-offset="951">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
