@@ -37,13 +37,10 @@
             (recur (dec cur) maxPos maxIndex acc))))))
 
 (defn sort-remainder [v pos1]
-  (if (= (dec (count v)) pos1)
-    v
-    (into (subvec v 0 pos1) (sort (subvec v pos1)))))
+  (if (= (dec (count v)) pos1) v (into (subvec v 0 pos1) (sort (subvec v pos1)))))
 
 (defn permute [v]
   (let [[pos2 pos1] (findStartingPos v)]
-    (if (nil? pos2)
-      nil
+    (when (not-nil? pos2)
       (let [nxt (sort-remainder (swapDigits v pos2 pos1) (inc pos1))]
         (cons nxt (lazy-seq (permute nxt)))))))
