@@ -24,15 +24,14 @@
   (let [cur (dec (count v))]
     (loop [cur cur
            maxPos -1
-           maxIndex 0
            acc []]
       (if (or (< cur maxPos) (< cur 0))
-        (if (= maxPos -1 ) nil (acc maxIndex))
+        (if (= maxPos -1 ) nil acc)
         (if-let [pos (findFirstLessThan v cur)]
-          (let [newAcc (conj acc [cur pos])
-                newMaxPos (max pos maxPos)]
-            (recur (dec cur) newMaxPos (if (not= maxPos newMaxPos) (dec (count newAcc)) maxIndex) newAcc))
-            (recur (dec cur) maxPos maxIndex acc))))))
+          (let [newMaxPos (max pos maxPos)
+                 newAcc (if (not= maxPos newMaxPos) [cur pos] acc)]
+            (recur (dec cur) newMaxPos (if (not= maxPos newMaxPos) [cur pos] acc)))
+            (recur (dec cur) maxPos acc))))))
 
 (defn sort-remainder [v pos1]
   (if (= (dec (count v)) pos1) v (into (subvec v 0 pos1) (sort (subvec v pos1)))))
