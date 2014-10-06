@@ -9,7 +9,7 @@
 (defn swapDigits [v pos1 pos2]  (assoc v pos2 (v pos1) pos1 (v pos2)))
 
 (defn Digits->String [v]
-  (reduce #(str %1 (.toString %2)) v))
+  (reduce #(str %1 %2) v))
 
 (defn findFirstLessThan [v pos]
   (let [cur pos]
