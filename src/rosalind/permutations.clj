@@ -1,12 +1,12 @@
 (ns rosalind.permutations)
 
-(defn String->Digits  [s]
+(defn String->Digits [s]
   (->>
     (seq s)
     (map (fn [x] (Integer/valueOf (Character/toString x))))
     (vec)))
 
-(defn swapDigits [v pos1 pos2]  (assoc v pos2 (v pos1) pos1 (v pos2)))
+(defn swapDigits [v pos1 pos2] (assoc v pos2 (v pos1) pos1 (v pos2)))
 
 (defn Digits->String [v]
   (reduce #(str %1 %2) v))
@@ -23,15 +23,13 @@
 (defn findStartingPos [v]
   (let [cur (dec (count v))]
     (loop [cur cur
-           maxPos -1
-           acc []]
-      (if (or (< cur maxPos) (< cur 0))
-        (if (= maxPos -1 ) nil acc)
-        (if-let [pos (findFirstLessThan v cur)]
-          (let [newMaxPos (max pos maxPos)
-                 newAcc (if (not= maxPos newMaxPos) [cur pos] acc)]
-            (recur (dec cur) newMaxPos (if (not= maxPos newMaxPos) [cur pos] acc)))
-            (recur (dec cur) maxPos acc))))))
+           acc [-1 -1]]
+      (let [maxPos (second acc)]
+        (if (or (< cur maxPos) (< cur 0))
+          (if (= maxPos -1) nil acc)
+          (if-let [pos (findFirstLessThan v cur)]
+            (recur (dec cur) (if (< maxPos pos) [cur pos] acc))
+            (recur (dec cur) acc)))))))
 
 (defn sort-remainder [v pos1]
   (if (= (dec (count v)) pos1) v (into (subvec v 0 pos1) (sort (subvec v pos1)))))
