@@ -16,8 +16,6 @@
     (loop [cur cur]
       (if (< cur 0) nil (if (< (v cur) (v pos)) cur (recur (dec cur)))))))
 
-(def not-nil? (complement nil?))
-
 ; Where should we start "promoting" from?
 ; And who is the one we shold be replacing with?
 (defn findStartingPos [v]
