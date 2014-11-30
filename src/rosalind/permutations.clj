@@ -12,9 +12,8 @@
   (apply str v))
 
 (defn findFirstLessThan [v pos]
-  (let [cur pos]
-    (loop [cur cur]
-      (if (< cur 0) nil (if (< (v cur) (v pos)) cur (recur (dec cur)))))))
+  (loop [cur pos]
+    (if (< cur 0) nil (if (< (v cur) (v pos)) cur (recur (dec cur))))))
 
 ; Where should we start "promoting" from?
 ; And who is the one we shold be replacing with?
