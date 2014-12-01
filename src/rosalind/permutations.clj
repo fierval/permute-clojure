@@ -18,15 +18,14 @@
 ; Where should we start "promoting" from?
 ; And who is the one we shold be replacing with?
 (defn findStartingPos [v]
-  (let [cur (dec (count v))]
-    (loop [cur cur
-           acc [-1 -1]]
-      (let [maxPos (second acc)]
-        (if (or (< cur maxPos) (< cur 0))
-          (if (= maxPos -1) nil acc)
-          (if-let [pos (findFirstLessThan v cur)]
-            (recur (dec cur) (if (< maxPos pos) [cur pos] acc))
-            (recur (dec cur) acc)))))))
+  (loop [cur (dec (count v))
+         acc [-1 -1]]
+    (let [maxPos (second acc)]
+      (if (or (< cur maxPos) (< cur 0))
+        (if (= maxPos -1) nil acc)
+        (if-let [pos (findFirstLessThan v cur)]
+          (recur (dec cur) (if (< maxPos pos) [cur pos] acc))
+          (recur (dec cur) acc))))))
 
 (defn sort-remainder [v pos1]
   (if (= (dec (count v)) pos1) v (into (subvec v 0 pos1) (sort (subvec v pos1)))))
